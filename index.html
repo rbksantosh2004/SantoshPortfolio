@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3d1d1c2895.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#"
+            ><img src="./Gemini_Generated_Image_1d6olg1d6olg1d6o__1_-removebg-preview (1).png" alt="LOGO" class="logo"
+          /></a>
+
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About/Education</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfoio">Projects</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>RBK SANTOSH</span><br />from India</h1>
+          <p class="line">Web Developer ,</p>
+          <p class="line">UI/UX Designer </p>
+          
+        </div>
+      </div>
+    </div>
+    <!-- ********************** ABOUT ******************* -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="./anime.jpeg"
+              alt="person-coding"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="Subtitle-1">About Me</h1>
+            <p>
+              I'm an ambitious BTech student with a strong interest in full-stack web 
+              development and emerging Industry 4.0 technologies. Eager to learn and 
+              contribute to innovative web application development, building a solid 
+              foundation for a successful career in the dynamic field of web development and 
+              other 4.0 emerging technologies.
+            </p>
+
+            <div class="tab-tittles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web App Interfaces</li>
+                <li>
+                  <span>Web Development</span><br />Developing Web Apps using
+                  HTML,CSS,JS & React JS
+                </li>
+                <li>
+                  <span>App Development</span><br />Building Android
+                  Applications using Java
+                </li>
+                
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024</span><br />
+                  Intern at Afame Technologies 
+                </li>
+                <li>
+                  <span>2023</span><br />Intern at Demy Software Solutions(DSS)
+                  
+                </li>
+                
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - 25</span><br />
+                  Btech CS Graduate at NSRIT
+                </li>
+                <li>
+                  <span>2019 - 21</span><br />Intermediate pass at Sri Chaitanya
+                  Junior College
+                </li>
+                <li>
+                  <span>2017 - 18</span><br />10th pass at MRS. MARIADAS SCHOOL
+          
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------- SERVICES --------------------- -->
+    <div id="services"></div>
+    <div class="container">
+      <h1 class="Subtitle-1">My Services</h1>
+      <div class="service-list">
+        <div class="amb">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            I excel in HTML, CSS, JavaScript, and React JS, employing these
+            talents to craft static websites for my college and
+            personal projects. 
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UX/UI Design</h2>
+          <p>
+            Since my second year of B.Tech, I've been deeply engaged in UX/UI
+            design, driven by an unwavering passion for crafting innovative and
+            creative websites. Recognizing that this phase is the foundation of
+            any development process, I've continuously expanded my knowledge and
+            skills in this domain. My expertise in Figma, a vital tool in the
+            design process. This profound
+            commitment to UX/UI design underscores my dedication to achieving
+            excellence in web and app development.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+        <div>
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h2>App Development</h2>
+          <p>
+            With substantial experience in both Kotlin and Java, I have
+            effectively harnessed these technologies through Android Studio. As an Android enthusiast, I have cultivated my skills
+            by developing a diverse range of applications, showcasing my
+            proficiency in this tech stack.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------- PORTFOLIO --------------------- -->
+    <div id="portfoio">
+      <div class="container">
+        <h1 class="Subtitle-1">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./image2.png" alt="" />
+            <div class="layer">
+              <h3>Veterinary Website </h3>
+              <p>
+                Created a Dynamic website that enables the user to browse through the content of Veterinary services information, nearby location services integrating map, Donation page, Chatbot Page,Photo Gallery Page and Contact Page
+              </p>
+              <a href="https://github.com/rbksantosh2004/-veterinary-website"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./foodmunch.jpg" alt="" />
+            <div class="layer">
+              <h3>Cloud-Based Deployment with AWS S3 and CloudFront </h3>
+              <p>
+                Developed an online showcase of personal projects for interviewer assessment using AWS S3 and CloudFront.
+Designed the banner segment and project cards using HTML with a variety of block and inline elements.
+	Enhanced visual aesthetics with CSS3 techniques, including backgrounds, flexbox, box model properties
+  	Deployed the website on Amazon AWS using S3 and enhanced performance with CloudFront CDN.
+
+
+              </p>
+              <a href="https://d4b9bn1orzr1g.cloudfront.net/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./powerbi.png" alt="" />
+            <div class="layer">
+              <h3>DATA ANALYZATION AND VISUALIZATION</h3>
+              <p> The dashboard shows the sales performance of the mart across different categories, regions, and time periods.The dashboard helps the mart owners and managers to monitor their sales, identify their best-selling products and regions, and optimize their inventory and marketing strategies.
+            I used Microsoft PowerBI to create this dashboard.
+                
+              </p>
+              <a href="https://drive.google.com/file/d/1eGPKcsOPtHbB96vVHt14SQI3-OVrX2MG/view?usp=sharing"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/rbksantosh2004"
+
+        class="btn">See More</a>
+      </div>
+    </div>
+
+    <div id="Gallery">
+      <div class="Container">
+        
+          <h1 class="Subtitle-1">My Gallery</h1>
+          <div class="work-list">
+        <div class="work">
+        
+          
+          <img src="./WhatsApp Image 2024-08-05 at 9.32.31 AM.jpeg" alt="Image 1" onclick="openModal();currentSlide(1)">
+          <img src="./WhatsApp Image 2024-08-05 at 9.32.32 AM.jpeg" alt="Image 2" onclick="openModal();currentSlide(2)">
+          <img src="./WhatsApp Image 2024-08-05 at 9.32.33 AM.jpeg" alt="Image 3" onclick="openModal();currentSlide(3)">
+          <img src="./WhatsApp Image 2024-08-05 at 9.32.32 AM (1).jpeg" alt="Image 4" onclick="openModal();currentSlide(4)">
+      </div>
+  
+      <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+  
+              <div class="mySlides">
+                  <img src="./WhatsApp Image 2024-08-05 at 9.32.31 AM.jpeg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                  <img src="./WhatsApp Image 2024-08-05 at 9.32.32 AM.jpeg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                  <img src="./WhatsApp Image 2024-08-05 at 9.32.33 AM.jpeg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                  <img src="./WhatsApp Image 2024-08-05 at 9.32.32 AM (1).jpeg" style="width:100%">
+              </div>
+  
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+      </div>
+  
+      </div>
+    </div>
+    </div>
+
+    <!-- ----------------------CONTACT----------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="Subtitle-1">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>rbksantosh2004@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 7569439949</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/balaji-krishna-santosh-revalla386875248"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/rbksantosh_2004/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              
+              <a href="https://github.com/rbksantosh2004"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="./RBK SANTOSH Resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Emal"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message...."
+              ></textarea>
+              <button type="submit" class="btn btn2" id="msg">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sad = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sad.style.right = "0";
+      }
+
+      function closemenu() {
+        sad.style.right = "-200px"; 
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwlCXbLgf2tBcbW51mpk4VG7zJ8q_haL6BSkckd9tmKtae-cD5nVNV7tzRqcRX-WTt7gw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+            
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
